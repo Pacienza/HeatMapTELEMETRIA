@@ -59,7 +59,7 @@ class MapaViewer(QWebEngineView):
             mapa.save(mapa_path)
             self.load(QUrl.fromLocalFile(mapa_path))
 
-        # cria um balão de erro se der erro, esse foi eu mesmo q fiz ent sei oq faz, mas é auto-explicativo tbm
+        # cria um balão de erro se der erro, mas é auto-explicativo tbm se vc n entendeu rapaz....
         except Exception as e:
             QMessageBox.critical(None, "Erro ao gerar mapa", f"Ocorreu um erro:\n{str(e)}")
             print(f"Erro ao gerar mapa: {e}")
